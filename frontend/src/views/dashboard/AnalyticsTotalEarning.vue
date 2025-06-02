@@ -7,21 +7,21 @@ const earnings = [
   {
     avatar: zipcar,
     title: 'Zipcar',
-    subtitle: 'Vuejs, React & HTML',
+    subtitle: 'Vuejs、React、HTML',
     amount: '$24,895.65',
     progress: 'primary',
   },
   {
     avatar: bitbank,
     title: 'Bitbank',
-    subtitle: 'Sketch, Figma & XD',
+    subtitle: 'Sketch、Figma、XD',
     amount: '$8,6500.20',
     progress: 'info',
   },
   {
     avatar: aviato,
     title: 'Aviato',
-    subtitle: 'HTML & Anguler',
+    subtitle: 'HTML、Angular',
     amount: '$1,2450.80',
     progress: 'secondary',
   },
@@ -29,15 +29,15 @@ const earnings = [
 
 const moreList = [
   {
-    title: 'Share',
+    title: '共有',
     value: 'Share',
   },
   {
-    title: 'Refresh',
+    title: '更新',
     value: 'Refresh',
   },
   {
-    title: 'Update',
+    title: 'アップデート',
     value: 'Update',
   },
 ]
@@ -46,7 +46,7 @@ const moreList = [
 <template>
   <VCard>
     <VCardItem>
-      <VCardTitle>Total Earning</VCardTitle>
+      <VCardTitle>総収益</VCardTitle>
 
       <template #append>
         <div class="me-n3">
@@ -71,7 +71,7 @@ const moreList = [
         </div>
       </div>
       <div class="text-body-1 mb-12">
-        Compared to $84,325 last year
+        昨年の$84,325と比較
       </div>
 
       <VList class="card-list">

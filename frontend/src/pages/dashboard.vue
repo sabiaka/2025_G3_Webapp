@@ -11,21 +11,21 @@ import AnalyticsWeeklyOverview from '@/views/dashboard/AnalyticsWeeklyOverview.v
 import CardStatisticsVertical from '@core/components/cards/CardStatisticsVertical.vue'
 
 const totalProfit = {
-  title: 'Total Profit',
+  title: '総利益',
   color: 'secondary',
   icon: 'ri-pie-chart-2-line',
   stats: '$25.6k',
   change: 42,
-  subtitle: 'Weekly Project',
+  subtitle: '週間プロジェクト',
 }
 
 const newProject = {
-  title: 'New Project',
+  title: '新規プロジェクト',
   color: 'primary',
   icon: 'ri-file-word-2-line',
   stats: '862',
   change: -18,
-  subtitle: 'Yearly Project',
+  subtitle: '年間プロジェクト',
 }
 </script>
 

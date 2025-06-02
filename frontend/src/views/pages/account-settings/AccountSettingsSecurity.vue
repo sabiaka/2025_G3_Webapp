@@ -7,107 +7,107 @@ const newPassword = ref('87654321')
 const confirmPassword = ref('87654321')
 
 const passwordRequirements = [
-  'Minimum 8 characters long - the more, the better',
-  'At least one lowercase character',
-  'At least one number, symbol, or whitespace character',
+  '最低8文字以上 - 長いほど安全です',
+  '少なくとも1つの小文字',
+  '少なくとも1つの数字、記号、または空白文字',
 ]
 
 const serverKeys = [
   {
-    name: 'Server Key 1',
+    name: 'サーバーキー1',
     key: '23eaf7f0-f4f7-495e-8b86-fad3261282ac',
-    createdOn: '28 Apr 2021, 18:20 GTM+4:10',
-    permission: 'Full Access',
+    createdOn: '2021年4月28日 18:20 GTM+4:10',
+    permission: 'フルアクセス',
   },
   {
-    name: 'Server Key 2',
+    name: 'サーバーキー2',
     key: 'bb98e571-a2e2-4de8-90a9-2e231b5e99',
-    createdOn: '12 Feb 2021, 10:30 GTM+2:30',
-    permission: 'Read Only',
+    createdOn: '2021年2月12日 10:30 GTM+2:30',
+    permission: '読み取り専用',
   },
   {
-    name: 'Server Key 3',
+    name: 'サーバーキー3',
     key: '2e915e59-3105-47f2-8838-6e46bf83b711',
-    createdOn: '28 Dec 2020, 12:21 GTM+4:10',
-    permission: 'Full Access',
+    createdOn: '2020年12月28日 12:21 GTM+4:10',
+    permission: 'フルアクセス',
   },
 ]
 
 const recentDevicesHeaders = [
   {
-    title: 'BROWSER',
+    title: 'ブラウザ',
     key: 'browser',
   },
   {
-    title: 'DEVICE',
+    title: 'デバイス',
     key: 'device',
   },
   {
-    title: 'LOCATION',
+    title: '場所',
     key: 'location',
   },
   {
-    title: 'RECENT ACTIVITY',
+    title: '最近のアクティビティ',
     key: 'recentActivity',
   },
 ]
 
 const recentDevices = [
   {
-    browser: 'Chrome on Windows',
+    browser: 'WindowsのChrome',
     device: 'HP Spectre 360',
-    location: 'New York, NY',
-    recentActivity: '28 Apr 2022, 18:20',
+    location: 'ニューヨーク、NY',
+    recentActivity: '2022年4月28日 18:20',
     deviceIcon: {
       icon: 'ri-macbook-line',
       color: 'primary',
     },
   },
   {
-    browser: 'Chrome on iPhone',
+    browser: 'iPhoneのChrome',
     device: 'iPhone 12x',
-    location: 'Los Angeles, CA',
-    recentActivity: '20 Apr 2022, 10:20',
+    location: 'ロサンゼルス、CA',
+    recentActivity: '2022年4月20日 10:20',
     deviceIcon: {
       icon: 'ri-android-line',
       color: 'error',
     },
   },
   {
-    browser: 'Chrome on Android',
+    browser: 'AndroidのChrome',
     device: 'Oneplus 9 Pro',
-    location: 'San Francisco, CA',
-    recentActivity: '16 Apr 2022, 04:20',
+    location: 'サンフランシスコ、CA',
+    recentActivity: '2022年4月16日 04:20',
     deviceIcon: {
       icon: 'ri-smartphone-line',
       color: 'success',
     },
   },
   {
-    browser: 'Chrome on macOS',
+    browser: 'macOSのChrome',
     device: 'Apple iMac',
-    location: 'New York, NY',
-    recentActivity: '28 Apr 2022, 18:20',
+    location: 'ニューヨーク、NY',
+    recentActivity: '2022年4月28日 18:20',
     deviceIcon: {
       icon: 'ri-mac-line',
       color: 'secondary',
     },
   },
   {
-    browser: 'Chrome on Windows',
+    browser: 'WindowsのChrome',
     device: 'HP Spectre 360',
-    location: 'Los Angeles, CA',
-    recentActivity: '20 Apr 2022, 10:20',
+    location: 'ロサンゼルス、CA',
+    recentActivity: '2022年4月20日 10:20',
     deviceIcon: {
       icon: 'ri-macbook-line',
       color: 'primary',
     },
   },
   {
-    browser: 'Chrome on Android',
+    browser: 'AndroidのChrome',
     device: 'Oneplus 9 Pro',
-    location: 'San Francisco, CA',
-    recentActivity: '16 Apr 2022, 04:20',
+    location: 'サンフランシスコ、CA',
+    recentActivity: '2022年4月16日 04:20',
     deviceIcon: {
       icon: 'ri-android-line',
       color: 'success',
@@ -120,7 +120,7 @@ const recentDevices = [
   <VRow>
     <!-- SECTION: Change Password -->
     <VCol cols="12">
-      <VCard title="Change Password">
+      <VCard title="パスワードの変更">
         <VForm>
           <VCardText>
             <!-- 👉 Current Password -->
@@ -135,7 +135,7 @@ const recentDevices = [
                   :type="isCurrentPasswordVisible ? 'text' : 'password'"
                   :append-inner-icon="isCurrentPasswordVisible ? 'ri-eye-off-line' : 'ri-eye-line'"
                   autocomplete="on"
-                  label="Current Password"
+                  label="現在のパスワード"
                   placeholder="············"
                   @click:append-inner="isCurrentPasswordVisible = !isCurrentPasswordVisible"
                 />
@@ -153,7 +153,7 @@ const recentDevices = [
                   v-model="newPassword"
                   :type="isNewPasswordVisible ? 'text' : 'password'"
                   :append-inner-icon="isNewPasswordVisible ? 'ri-eye-off-line' : 'ri-eye-line'"
-                  label="New Password"
+                  label="新しいパスワード"
                   autocomplete="on"
                   placeholder="············"
                   @click:append-inner="isNewPasswordVisible = !isNewPasswordVisible"
@@ -170,7 +170,7 @@ const recentDevices = [
                   :type="isConfirmPasswordVisible ? 'text' : 'password'"
                   :append-inner-icon="isConfirmPasswordVisible ? 'ri-eye-off-line' : 'ri-eye-line'"
                   autocomplete="on"
-                  label="Confirm New Password"
+                  label="新しいパスワードの確認"
                   placeholder="············"
                   @click:append-inner="isConfirmPasswordVisible = !isConfirmPasswordVisible"
                 />
@@ -181,7 +181,7 @@ const recentDevices = [
           <!-- 👉 Password Requirements -->
           <VCardText>
             <p class="text-base font-weight-medium mt-2">
-              Password Requirements:
+              パスワードの要件：
             </p>
 
             <ul class="d-flex flex-column gap-y-3">
@@ -204,14 +204,14 @@ const recentDevices = [
 
           <!-- 👉 Action Buttons -->
           <VCardText class="d-flex flex-wrap gap-4">
-            <VBtn>Save changes</VBtn>
+            <VBtn>変更を保存</VBtn>
 
             <VBtn
               type="reset"
               color="secondary"
               variant="outlined"
             >
-              Reset
+              リセット
             </VBtn>
           </VCardText>
         </VForm>
@@ -221,21 +221,21 @@ const recentDevices = [
 
     <!-- SECTION Two-steps verification -->
     <VCol cols="12">
-      <VCard title="Two-steps verification">
+      <VCard title="二段階認証">
         <VCardText>
           <p class="font-weight-semibold">
-            Two factor authentication is not enabled yet.
+            二段階認証はまだ有効になっていません。
           </p>
           <p>
-            Two-factor authentication adds an additional layer of security to your account by requiring more than just a password to log in.
+            二段階認証は、パスワード以外の認証要素を追加することで、アカウントのセキュリティを強化します。
             <a
               href="javascript:void(0)"
               class="text-decoration-none"
-            >Learn more.</a>
+            >詳細を見る</a>
           </p>
 
           <VBtn>
-            Enable two-factor authentication
+            二段階認証を有効にする
           </VBtn>
         </VCardText>
       </VCard>
@@ -244,7 +244,7 @@ const recentDevices = [
 
     <VCol cols="12">
       <!-- SECTION: Create an API key -->
-      <VCard title="Create an API key">
+      <VCard title="APIキーの作成">
         <VRow>
           <!-- 👉 Choose API Key -->
           <VCol
@@ -288,7 +288,6 @@ const recentDevices = [
           </VCol>
         </VRow>
       </VCard>
-    <!-- !SECTION -->
     </VCol>
 
     <VCol cols="12">
@@ -328,7 +327,6 @@ const recentDevices = [
           </div>
         </VCardText>
       </VCard>
-      <!-- !SECTION -->
     </VCol>
 
     <!-- SECTION Recent Devices -->
@@ -358,6 +356,5 @@ const recentDevices = [
         </VDataTable>
       </VCard>
     </VCol>
-    <!-- !SECTION -->
   </VRow>
 </template>

@@ -49,10 +49,10 @@ const isPasswordVisible = ref(false)
 
       <VCardText class="pt-2">
         <h4 class="text-h4 mb-1">
-          Adventure starts here 🚀
+          冒険はここから始まります 🚀
         </h4>
         <p class="mb-0">
-          Make your app management easy and fun!
+          アプリの管理を簡単で楽しく！
         </p>
       </VCardText>
 
@@ -63,7 +63,7 @@ const isPasswordVisible = ref(false)
             <VCol cols="12">
               <VTextField
                 v-model="form.username"
-                label="Username"
+                label="ユーザー名"
                 placeholder="Johndoe"
               />
             </VCol>
@@ -71,7 +71,7 @@ const isPasswordVisible = ref(false)
             <VCol cols="12">
               <VTextField
                 v-model="form.email"
-                label="Email"
+                label="メールアドレス"
                 placeholder="johndoe@email.com"
                 type="email"
               />
@@ -81,7 +81,7 @@ const isPasswordVisible = ref(false)
             <VCol cols="12">
               <VTextField
                 v-model="form.password"
-                label="Password"
+                label="パスワード"
                 placeholder="············"
                 :type="isPasswordVisible ? 'text' : 'password'"
                 autocomplete="password"
@@ -98,11 +98,12 @@ const isPasswordVisible = ref(false)
                   for="privacy-policy"
                   style="opacity: 1;"
                 >
-                  <span class="me-1">I agree to</span>
+                  <span class="me-1">以下の</span>
                   <a
                     href="javascript:void(0)"
                     class="text-primary"
-                  >privacy policy & terms</a>
+                  >プライバシーポリシーと利用規約</a>
+                  <span class="ms-1">に同意します</span>
                 </VLabel>
               </div>
 
@@ -111,7 +112,7 @@ const isPasswordVisible = ref(false)
                 type="submit"
                 to="/"
               >
-                Sign up
+                登録
               </VBtn>
             </VCol>
 
@@ -120,12 +121,12 @@ const isPasswordVisible = ref(false)
               cols="12"
               class="text-center text-base"
             >
-              <span>Already have an account?</span>
+              <span>すでにアカウントをお持ちですか？</span>
               <RouterLink
                 class="text-primary ms-2"
                 to="login"
               >
-                Sign in instead
+                ログインする
               </RouterLink>
             </VCol>
 
@@ -134,7 +135,7 @@ const isPasswordVisible = ref(false)
               class="d-flex align-center"
             >
               <VDivider />
-              <span class="mx-4">or</span>
+              <span class="mx-4">または</span>
               <VDivider />
             </VCol>
 

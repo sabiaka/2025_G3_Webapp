@@ -48,9 +48,9 @@ import avatar1 from '@images/avatars/avatar-1.png'
             </template>
 
             <VListItemTitle class="font-weight-semibold">
-              John Doe
+              山田 太郎
             </VListItemTitle>
-            <VListItemSubtitle>Admin</VListItemSubtitle>
+            <VListItemSubtitle>管理者</VListItemSubtitle>
           </VListItem>
           <VDivider class="my-2" />
 
@@ -64,7 +64,7 @@ import avatar1 from '@images/avatars/avatar-1.png'
               />
             </template>
 
-            <VListItemTitle>Profile</VListItemTitle>
+            <VListItemTitle>プロフィール</VListItemTitle>
           </VListItem>
 
           <!-- 👉 Settings -->
@@ -77,7 +77,7 @@ import avatar1 from '@images/avatars/avatar-1.png'
               />
             </template>
 
-            <VListItemTitle>Settings</VListItemTitle>
+            <VListItemTitle>設定</VListItemTitle>
           </VListItem>
 
           <!-- 👉 Pricing -->
@@ -90,7 +90,7 @@ import avatar1 from '@images/avatars/avatar-1.png'
               />
             </template>
 
-            <VListItemTitle>Pricing</VListItemTitle>
+            <VListItemTitle>料金</VListItemTitle>
           </VListItem>
 
           <!-- 👉 FAQ -->
@@ -103,7 +103,7 @@ import avatar1 from '@images/avatars/avatar-1.png'
               />
             </template>
 
-            <VListItemTitle>FAQ</VListItemTitle>
+            <VListItemTitle>よくある質問</VListItemTitle>
           </VListItem>
 
           <!-- Divider -->
@@ -119,7 +119,7 @@ import avatar1 from '@images/avatars/avatar-1.png'
               />
             </template>
 
-            <VListItemTitle>Logout</VListItemTitle>
+            <VListItemTitle>ログアウト</VListItemTitle>
           </VListItem>
         </VList>
       </VMenu>

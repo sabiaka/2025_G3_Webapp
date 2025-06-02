@@ -10,19 +10,19 @@ import avatar8 from '@images/avatars/avatar-8.png'
 
 const headers = [
   {
-    title: 'User',
+    title: 'ユーザー',
     key: 'username',
   },
   {
-    title: 'Email',
+    title: 'メールアドレス',
     key: 'email',
   },
   {
-    title: 'Role',
+    title: '役割',
     key: 'role',
   },
   {
-    title: 'Status',
+    title: 'ステータス',
     key: 'status',
   },
 ]
@@ -32,131 +32,131 @@ const userData = [
     id: 1,
     fullName: 'Galasasen Slixby',
     company: 'Yotz PVT LTD',
-    role: 'editor',
+    role: '編集者',
     username: 'gslixby0',
-    country: 'El Salvador',
+    country: 'エルサルバドル',
     contact: '(479) 232-9151',
     email: 'gslixby0@abc.net.au',
-    currentPlan: 'enterprise',
-    status: 'inactive',
+    currentPlan: 'エンタープライズ',
+    status: '非アクティブ',
     avatar: avatar1,
   },
   {
     id: 2,
     fullName: 'Halsey Redmore',
     company: 'Skinder PVT LTD',
-    role: 'author',
+    role: '作成者',
     username: 'hredmore1',
-    country: 'Albania',
+    country: 'アルバニア',
     contact: '(472) 607-9137',
     email: 'hredmore1@imgur.com',
-    currentPlan: 'team',
-    status: 'pending',
+    currentPlan: 'チーム',
+    status: '保留中',
     avatar: avatar2,
   },
   {
     id: 3,
     fullName: 'Marjory Sicely',
     company: 'Oozz PVT LTD',
-    role: 'maintainer',
+    role: '管理者',
     username: 'msicely2',
-    country: 'Russia',
+    country: 'ロシア',
     contact: '(321) 264-4599',
     email: 'msicely2@who.int',
-    currentPlan: 'enterprise',
-    status: 'active',
+    currentPlan: 'エンタープライズ',
+    status: 'アクティブ',
     avatar: avatar3,
   },
   {
     id: 4,
     fullName: 'Cyrill Risby',
     company: 'Oozz PVT LTD',
-    role: 'Admin',
+    role: '管理者',
     username: 'crisby3',
-    country: 'China',
+    country: '中国',
     contact: '(923) 690-6806',
     email: 'crisby3@wordpress.com',
-    currentPlan: 'team',
-    status: 'inactive',
+    currentPlan: 'チーム',
+    status: '非アクティブ',
     avatar: avatar4,
   },
   {
     id: 5,
     fullName: 'Maggy Hurran',
     company: 'Aimbo PVT LTD',
-    role: 'subscriber',
+    role: '購読者',
     username: 'mhurran4',
-    country: 'Pakistan',
+    country: 'パキスタン',
     contact: '(669) 914-1078',
     email: 'mhurran4@yahoo.co.jp',
-    currentPlan: 'enterprise',
-    status: 'pending',
+    currentPlan: 'エンタープライズ',
+    status: '保留中',
     avatar: avatar5,
   },
   {
     id: 6,
     fullName: 'Silvain Halstead',
     company: 'Jaxbean PVT LTD',
-    role: 'author',
+    role: '作成者',
     username: 'shalstead5',
-    country: 'China',
+    country: '中国',
     contact: '(958) 973-3093',
     email: 'shalstead5@shinystat.com',
-    currentPlan: 'company',
-    status: 'active',
+    currentPlan: '会社',
+    status: 'アクティブ',
     avatar: avatar6,
   },
   {
     id: 7,
     fullName: 'Breena Gallemore',
     company: 'Jazzy PVT LTD',
-    role: 'subscriber',
+    role: '購読者',
     username: 'bgallemore6',
-    country: 'Canada',
+    country: 'カナダ',
     contact: '(825) 977-8152',
     email: 'bgallemore6@boston.com',
-    currentPlan: 'company',
-    status: 'pending',
+    currentPlan: '会社',
+    status: '保留中',
     avatar: avatar7,
   },
   {
     id: 8,
     fullName: 'Kathryne Liger',
     company: 'Pixoboo PVT LTD',
-    role: 'author',
+    role: '作成者',
     username: 'kliger7',
-    country: 'France',
+    country: 'フランス',
     contact: '(187) 440-0934',
     email: 'kliger7@vinaora.com',
-    currentPlan: 'enterprise',
-    status: 'pending',
+    currentPlan: 'エンタープライズ',
+    status: '保留中',
     avatar: avatar8,
   },
 ]
 
 const resolveUserRoleVariant = role => {
   const roleLowerCase = role.toLowerCase()
-  if (roleLowerCase === 'subscriber')
+  if (roleLowerCase === '購読者')
     return {
       color: 'success',
       icon: 'ri-user-line',
     }
-  if (roleLowerCase === 'author')
+  if (roleLowerCase === '作成者')
     return {
       color: 'error',
       icon: 'ri-computer-line',
     }
-  if (roleLowerCase === 'maintainer')
+  if (roleLowerCase === '管理者')
     return {
       color: 'info',
       icon: 'ri-pie-chart-line',
     }
-  if (roleLowerCase === 'editor')
+  if (roleLowerCase === '編集者')
     return {
       color: 'warning',
       icon: 'ri-edit-box-line',
     }
-  if (roleLowerCase === 'admin')
+  if (roleLowerCase === '管理者')
     return {
       color: 'primary',
       icon: 'ri-vip-crown-line',
@@ -170,11 +170,11 @@ const resolveUserRoleVariant = role => {
 
 const resolveUserStatusVariant = stat => {
   const statLowerCase = stat.toLowerCase()
-  if (statLowerCase === 'pending')
+  if (statLowerCase === '保留中')
     return 'warning'
-  if (statLowerCase === 'active')
+  if (statLowerCase === 'アクティブ')
     return 'success'
-  if (statLowerCase === 'inactive')
+  if (statLowerCase === '非アクティブ')
     return 'secondary'
   
   return 'primary'

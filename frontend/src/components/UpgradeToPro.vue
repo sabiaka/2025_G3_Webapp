@@ -6,7 +6,7 @@
     target="_blank"
     rel="noopener noreferrer"
   >
-    Upgrade to Pro
+    Pro版にアップグレード
 
     <span class="button-inner" />
 
@@ -20,11 +20,11 @@
     >
       <VCard>
         <VImg src="https://cdn.themeselection.com/ts-assets/materio/materio-vuetify-vuejs-admin-template/banner/banner.png" />
-        <VCardTitle>Materio - Vuetify Admin Template</VCardTitle>
+        <VCardTitle>Materio - Vuetify管理テンプレート</VCardTitle>
         <VCardText>
-          Materio Admin is the most developer friendly & highly customisable Admin Dashboard Template based on Vuetify.
+          Materio Adminは、Vuetifyベースの開発者フレンドリーで高度にカスタマイズ可能な管理ダッシュボードテンプレートです。
         </VCardText>
-        <VCardText>Click on below button to explore PRO version.</VCardText>
+        <VCardText>下のボタンをクリックしてPROバージョンを探索してください。</VCardText>
         <VCardText>
           <VBtn
             class="me-4"
@@ -32,7 +32,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            Demo
+            デモ
           </VBtn>
           <VBtn
             variant="outlined"
@@ -40,7 +40,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            Download
+            ダウンロード
           </VBtn>
         </VCardText>
       </VCard>

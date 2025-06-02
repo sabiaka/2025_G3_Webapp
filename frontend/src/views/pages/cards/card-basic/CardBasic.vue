@@ -35,11 +35,11 @@ const isCardDetailsVisible = ref(false)
         />
 
         <VCardItem>
-          <VCardTitle>Influencing The Influencer</VCardTitle>
+          <VCardTitle>インフルエンサーへの影響</VCardTitle>
         </VCardItem>
 
         <VCardText>
-          Cancun is back, better than ever! Over a hundred Mexico resorts have reopened and the state tourism minister predicts Cancun will draw as many visitors in 2006 as it did two years ago.
+          カンクンが復活し、以前より良くなりました！100以上のメキシコリゾートが再開し、州観光大臣は2006年に2年前と同じ数の観光客がカンクンを訪れると予測しています。
         </VCardText>
       </VCard>
     </VCol>
@@ -68,15 +68,15 @@ const isCardDetailsVisible = ref(false)
                 Robert Meyer
               </VCardTitle>
               <VCardSubtitle class="text-caption pa-0">
-                London, UK
+                ロンドン、イギリス
               </VCardSubtitle>
             </div>
-            <VBtn>send request</VBtn>
+            <VBtn>リクエストを送信</VBtn>
           </div>
 
           <!--  Mutual Friends -->
           <div class="d-flex justify-space-between align-center mt-8">
-            <span class="font-weight-medium">18 mutual friends</span>
+            <span class="font-weight-medium">共通の友達18人</span>
 
             <div class="v-avatar-group">
               <VAvatar
@@ -101,16 +101,16 @@ const isCardDetailsVisible = ref(false)
         <VImg :src="pages3" />
 
         <VCardItem>
-          <VCardTitle>Popular Uses Of The Internet</VCardTitle>
+          <VCardTitle>インターネットの人気な用途</VCardTitle>
         </VCardItem>
 
         <VCardText>
-          Although cards can support multiple actions, UI controls, and an overflow menu.
+          カードは複数のアクション、UIコントロール、オーバーフローメニューをサポートできます。
         </VCardText>
 
         <VCardActions>
           <VBtn @click="isCardDetailsVisible = !isCardDetailsVisible">
-            Details
+            詳細
           </VBtn>
 
           <VSpacer />
@@ -128,7 +128,7 @@ const isCardDetailsVisible = ref(false)
           <div v-show="isCardDetailsVisible">
             <VDivider />
             <VCardText>
-              I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
+              私は物です。しかし、ほとんどの政治家と同様に、彼は実現できる以上のことを約束しました。兵士よ、あなたは寝る時間がないでしょう、ベッドメイキングの作業で忙しいからです。それでは、そのデータファイルを使いましょう！ねえ、それに1と2つのゼロを追加するか、さもなければ私たちは去ります！あなたは彼の洗濯をするつもりですか？私は脱出する方法を見つけなければなりません。
             </VCardText>
           </div>
         </VExpandTransition>
@@ -158,17 +158,17 @@ const isCardDetailsVisible = ref(false)
             </VCardItem>
 
             <VCardText>
-              Apple iPhone 11 Pro smartphone. Announced Sep 2019. Features 5.8″ display Apple A13 Bionic
+              Apple iPhone 11 Proスマートフォン。2019年9月発表。5.8インチディスプレイ、Apple A13 Bionic搭載
             </VCardText>
 
             <VCardText class="text-subtitle-1">
-              <span>Price :</span> <span class="font-weight-medium">$899</span>
+              <span>価格：</span> <span class="font-weight-medium">$899</span>
             </VCardText>
 
             <VCardActions class="justify-space-between">
               <VBtn>
                 <VIcon icon="ri-shopping-cart-line" />
-                <span class="ms-2">Add to cart</span>
+                <span class="ms-2">カートに追加</span>
               </VBtn>
 
               <VBtn
@@ -190,7 +190,7 @@ const isCardDetailsVisible = ref(false)
         <div class="d-flex flex-column-reverse flex-md-row">
           <div>
             <VCardItem>
-              <VCardTitle>Stumptown Roasters</VCardTitle>
+              <VCardTitle>スタンプタウンロースターズ</VCardTitle>
             </VCardItem>
 
             <VCardText class="d-flex align-center flex-wrap text-body-1">
@@ -200,16 +200,16 @@ const isCardDetailsVisible = ref(false)
                 class="me-3"
                 density="compact"
               />
-              <span>5 Star | 98 reviews</span>
+              <span>5つ星 | 98件のレビュー</span>
             </VCardText>
 
             <VCardText>
-              Before there was a United States of America, there were coffee houses, because how are you supposed to build.
+              アメリカ合衆国ができる前から、コーヒーハウスは存在していました。なぜなら、どのようにして国を建設するのでしょうか。
             </VCardText>
 
             <VCardActions>
-              <VBtn>Location</VBtn>
-              <VBtn>Reviews</VBtn>
+              <VBtn>場所</VBtn>
+              <VBtn>レビュー</VBtn>
             </VCardActions>
           </div>
 
@@ -243,7 +243,7 @@ const isCardDetailsVisible = ref(false)
           </p>
 
           <p class="mb-0">
-            3.1GHz 6-core 10th-generation Intel Core i5 processor, Turbo Boost up to 4.5GHz
+            3.1GHz 6コア 第10世代Intel Core i5プロセッサー、最大4.5GHzまでターボブースト
           </p>
         </VCardText>
 

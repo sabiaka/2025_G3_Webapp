@@ -10,17 +10,17 @@ const activeTab = ref(route.params.tab)
 // tabs
 const tabs = [
   {
-    title: 'Account',
+    title: 'アカウント',
     icon: 'ri-group-line',
     tab: 'account',
   },
   {
-    title: 'Security',
+    title: 'セキュリティ',
     icon: 'ri-lock-line',
     tab: 'security',
   },
   {
-    title: 'Notifications',
+    title: '通知',
     icon: 'ri-notification-3-line',
     tab: 'notification',
   },

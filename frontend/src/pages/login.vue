@@ -48,10 +48,10 @@ const isPasswordVisible = ref(false)
 
       <VCardText class="pt-2">
         <h4 class="text-h4 mb-1">
-          Welcome to Materio! 👋🏻
+          Materioへようこそ！👋🏻
         </h4>
         <p class="mb-0">
-          Please sign-in to your account and start the adventure
+          アカウントにサインインして、新しい冒険を始めましょう
         </p>
       </VCardText>
 
@@ -62,7 +62,7 @@ const isPasswordVisible = ref(false)
             <VCol cols="12">
               <VTextField
                 v-model="form.email"
-                label="Email"
+                label="メールアドレス"
                 type="email"
               />
             </VCol>
@@ -71,7 +71,7 @@ const isPasswordVisible = ref(false)
             <VCol cols="12">
               <VTextField
                 v-model="form.password"
-                label="Password"
+                label="パスワード"
                 placeholder="············"
                 :type="isPasswordVisible ? 'text' : 'password'"
                 autocomplete="password"
@@ -83,14 +83,14 @@ const isPasswordVisible = ref(false)
               <div class="d-flex align-center justify-space-between flex-wrap my-6">
                 <VCheckbox
                   v-model="form.remember"
-                  label="Remember me"
+                  label="ログイン状態を保持"
                 />
 
                 <a
                   class="text-primary"
                   href="javascript:void(0)"
                 >
-                  Forgot Password?
+                  パスワードをお忘れですか？
                 </a>
               </div>
 
@@ -100,7 +100,7 @@ const isPasswordVisible = ref(false)
                 type="submit"
                 to="/"
               >
-                Login
+                ログイン
               </VBtn>
             </VCol>
 
@@ -109,12 +109,12 @@ const isPasswordVisible = ref(false)
               cols="12"
               class="text-center text-base"
             >
-              <span>New on our platform?</span>
+              <span>初めてご利用ですか？</span>
               <RouterLink
                 class="text-primary ms-2"
                 to="/register"
               >
-                Create an account
+                アカウントを作成
               </RouterLink>
             </VCol>
 
@@ -123,7 +123,7 @@ const isPasswordVisible = ref(false)
               class="d-flex align-center"
             >
               <VDivider />
-              <span class="mx-4">or</span>
+              <span class="mx-4">または</span>
               <VDivider />
             </VCol>
 

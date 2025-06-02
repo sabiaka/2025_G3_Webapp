@@ -23,19 +23,19 @@
       <a
         href="https://themeselection.com/license/"
         target="noopener noreferrer"
-      >License</a>
+      >ライセンス</a>
       <a
         href="https://themeselection.com/"
         target="noopener noreferrer"
-      >More Themes</a>
+      >その他のテーマ</a>
       <a
         href="https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/documentation/"
         target="noopener noreferrer"
-      >Documentation</a>
+      >ドキュメント</a>
       <a
         href="https://themeselection.com/support/"
         target="noopener noreferrer"
-      >Support</a>
+      >サポート</a>
     </span>
   </div>
 </template>

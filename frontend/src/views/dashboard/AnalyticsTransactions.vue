@@ -1,25 +1,25 @@
 <script setup>
 const statistics = [
   {
-    title: 'Sales',
+    title: '売上',
     stats: '245k',
     icon: 'ri-pie-chart-2-line',
     color: 'primary',
   },
   {
-    title: 'Customers',
+    title: '顧客数',
     stats: '12.5k',
     icon: 'ri-group-line',
     color: 'success',
   },
   {
-    title: 'Product',
+    title: '商品数',
     stats: '1.54k',
     icon: 'ri-macbook-line',
     color: 'warning',
   },
   {
-    title: 'Revenue',
+    title: '収益',
     stats: '$88k',
     icon: 'ri-money-dollar-circle-line',
     color: 'info',
@@ -28,25 +28,25 @@ const statistics = [
 
 const moreList = [
   {
-    title: 'Share',
+    title: '共有',
     value: 'Share',
   },
   {
-    title: 'Refresh',
+    title: '更新',
     value: 'Refresh',
   },
   {
-    title: 'Update',
+    title: 'アップデート',
     value: 'Update',
   },
 ]
 </script>
 
 <template>
-  <VCard title="Transactions">
+  <VCard title="取引">
     <template #subtitle>
       <p class="text-body-1 mb-0">
-        <span class="d-inline-block font-weight-medium text-high-emphasis">Total 48.5% Growth</span> <span class="text-high-emphasis">😎</span> this month
+        <span class="d-inline-block font-weight-medium text-high-emphasis">総成長率48.5%</span> <span class="text-high-emphasis">😎</span> 今月
       </p>
     </template>
 

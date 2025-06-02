@@ -3,7 +3,7 @@ const salesByCountries = [
   {
     abbr: 'US',
     amount: '$8,656k',
-    country: 'United states of america',
+    country: 'アメリカ合衆国',
     change: '+25.8%',
     sales: '894k',
     color: 'success',
@@ -11,7 +11,7 @@ const salesByCountries = [
   {
     abbr: 'UK',
     amount: '$2,415k',
-    country: 'United kingdom',
+    country: 'イギリス',
     change: '-6.2%',
     sales: '645k',
     color: 'error',
@@ -19,7 +19,7 @@ const salesByCountries = [
   {
     abbr: 'IN',
     amount: '$865k',
-    country: 'India',
+    country: 'インド',
     change: '+12.4%',
     sales: '148k',
     color: 'warning',
@@ -27,7 +27,7 @@ const salesByCountries = [
   {
     abbr: 'JA',
     amount: '$745k',
-    country: 'Japan',
+    country: '日本',
     change: '-11.9%',
     sales: '86k',
     color: 'secondary',
@@ -35,7 +35,7 @@ const salesByCountries = [
   {
     abbr: 'KO',
     amount: '$45k',
-    country: 'Korea',
+    country: '韓国',
     change: '+16.2%',
     sales: '42k',
     color: 'error',
@@ -44,15 +44,15 @@ const salesByCountries = [
 
 const moreList = [
   {
-    title: 'Yesterday',
+    title: '昨日',
     value: 'Yesterday',
   },
   {
-    title: 'Last Week',
+    title: '先週',
     value: 'Last Week',
   },
   {
-    title: 'Last Month',
+    title: '先月',
     value: 'Last Month',
   },
 ]
@@ -61,7 +61,7 @@ const moreList = [
 <template>
   <VCard>
     <VCardItem>
-      <VCardTitle>Sales by Countries</VCardTitle>
+      <VCardTitle>国別売上</VCardTitle>
 
       <template #append>
         <div class="me-n3">
@@ -115,7 +115,7 @@ const moreList = [
                 {{ data.sales }}
               </h6>
               <div class="text-body-2 text-disabled text-end">
-                Sales
+                売上
               </div>
             </div>
           </template>

@@ -49,13 +49,13 @@ const options = computed(() => {
     },
     xaxis: {
       categories: [
-        'Sun',
-        'Mon',
-        'Tue',
-        'Wed',
-        'Thu',
-        'Fri',
-        'Sat',
+        '日',
+        '月',
+        '火',
+        '水',
+        '木',
+        '金',
+        '土',
       ],
       tickPlacement: 'on',
       labels: { show: false },
@@ -101,15 +101,15 @@ const series = [{
 
 const moreList = [
   {
-    title: 'Share',
+    title: '共有',
     value: 'Share',
   },
   {
-    title: 'Refresh',
+    title: '更新',
     value: 'Refresh',
   },
   {
-    title: 'Update',
+    title: 'アップデート',
     value: 'Update',
   },
 ]
@@ -118,7 +118,7 @@ const moreList = [
 <template>
   <VCard>
     <VCardItem>
-      <VCardTitle>Weekly Overview</VCardTitle>
+      <VCardTitle>週間概要</VCardTitle>
 
       <template #append>
         <div class="me-n3">
@@ -140,12 +140,12 @@ const moreList = [
           45%
         </h4>
         <p class="mb-0">
-          Your sales performance is 45% <span class="text-high-emphasis">😎</span> better compared to last month
+          売上パフォーマンスは先月より45% <span class="text-high-emphasis">😎</span> 向上しています
         </p>
       </div>
 
       <VBtn block>
-        Details
+        詳細
       </VBtn>
     </VCardText>
   </VCard>

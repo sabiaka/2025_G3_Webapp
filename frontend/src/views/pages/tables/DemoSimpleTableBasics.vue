@@ -1,35 +1,35 @@
 <script setup>
 const desserts = [
   {
-    dessert: 'Frozen Yogurt',
+    dessert: 'フローズンヨーグルト',
     calories: 159,
     fat: 6,
     carbs: 24,
     protein: 4,
   },
   {
-    dessert: 'Ice cream sandwich',
+    dessert: 'アイスクリームサンドイッチ',
     calories: 237,
     fat: 6,
     carbs: 24,
     protein: 4,
   },
   {
-    dessert: 'Eclair',
+    dessert: 'エクレア',
     calories: 262,
     fat: 6,
     carbs: 24,
     protein: 4,
   },
   {
-    dessert: 'Cupcake',
+    dessert: 'カップケーキ',
     calories: 305,
     fat: 6,
     carbs: 24,
     protein: 4,
   },
   {
-    dessert: 'Gingerbread',
+    dessert: 'ジンジャーブレッド',
     calories: 356,
     fat: 6,
     carbs: 24,
@@ -43,19 +43,19 @@ const desserts = [
     <thead>
       <tr>
         <th class="text-uppercase">
-          Desserts(100g Servings)
+          デザート（100gあたり）
         </th>
         <th class="text-uppercase text-center">
-          calories
+          カロリー
         </th>
         <th class="text-uppercase text-center">
-          Fat(g)
+          脂質(g)
         </th>
         <th class="text-uppercase text-center">
-          Carbs(g)
+          炭水化物(g)
         </th>
         <th class="text-uppercase text-center">
-          protein(g)
+          タンパク質(g)
         </th>
       </tr>
     </thead>

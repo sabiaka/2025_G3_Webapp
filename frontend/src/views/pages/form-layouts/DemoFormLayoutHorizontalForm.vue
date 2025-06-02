@@ -16,7 +16,7 @@ const checkbox = ref(false)
             cols="12"
             md="3"
           >
-            <label for="firstName">First Name</label>
+            <label for="firstName">名</label>
           </VCol>
 
           <VCol
@@ -26,7 +26,7 @@ const checkbox = ref(false)
             <VTextField
               id="firstName"
               v-model="firstName"
-              placeholder="John"
+              placeholder="太郎"
               persistent-placeholder
             />
           </VCol>
@@ -40,7 +40,7 @@ const checkbox = ref(false)
             cols="12"
             md="3"
           >
-            <label for="email">Email</label>
+            <label for="email">メールアドレス</label>
           </VCol>
 
           <VCol
@@ -50,7 +50,7 @@ const checkbox = ref(false)
             <VTextField
               id="email"
               v-model="email"
-              placeholder="johndoe@email.com"
+              placeholder="taro@example.com"
               persistent-placeholder
             />
           </VCol>
@@ -64,7 +64,7 @@ const checkbox = ref(false)
             cols="12"
             md="3"
           >
-            <label for="mobile">Mobile</label>
+            <label for="mobile">携帯電話</label>
           </VCol>
 
           <VCol
@@ -75,7 +75,7 @@ const checkbox = ref(false)
               id="mobile"
               v-model="mobile"
               type="number"
-              placeholder="+1 123 456 7890"
+              placeholder="090-1234-5678"
               persistent-placeholder
             />
           </VCol>
@@ -89,7 +89,7 @@ const checkbox = ref(false)
             cols="12"
             md="3"
           >
-            <label for="password">Password</label>
+            <label for="password">パスワード</label>
           </VCol>
 
           <VCol
@@ -121,7 +121,7 @@ const checkbox = ref(false)
           >
             <VCheckbox
               v-model="checkbox"
-              label="Remember me"
+              label="ログイン情報を保存"
             />
           </VCol>
         </VRow>
@@ -142,14 +142,14 @@ const checkbox = ref(false)
               type="submit"
               class="me-4"
             >
-              Submit
+              送信
             </VBtn>
             <VBtn
               color="secondary"
               variant="outlined"
               type="reset"
             >
-              Reset
+              リセット
             </VBtn>
           </VCol>
         </VRow>

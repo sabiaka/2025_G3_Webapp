@@ -1,55 +1,55 @@
 <script setup>
 const recentDevices = ref([
   {
-    type: 'New for you',
+    type: 'あなたへの新着情報',
     email: true,
     browser: true,
     app: true,
   },
   {
-    type: 'Account activity',
+    type: 'アカウントアクティビティ',
     email: true,
     browser: true,
     app: true,
   },
   {
-    type: 'A new browser used to sign in',
+    type: '新しいブラウザでのサインイン',
     email: true,
     browser: true,
     app: false,
   },
   {
-    type: 'A new device is linked',
+    type: '新しいデバイスのリンク',
     email: true,
     browser: false,
     app: false,
   },
 ])
 
-const selectedNotification = ref('Only when I\'m online')
+const selectedNotification = ref('オンライン時のみ')
 </script>
 
 <template>
-  <VCard title="Recent Devices">
+  <VCard title="最近のデバイス">
     <VCardText>
-      We need permission from your browser to show notifications.
-      <a href="javascript:void(0)">Request Permission</a>
+      通知を表示するには、ブラウザの許可が必要です。
+      <a href="javascript:void(0)">許可をリクエスト</a>
     </VCardText>
 
     <VTable class="text-no-wrap">
       <thead>
         <tr>
           <th scope="col">
-            Type
+            種類
           </th>
           <th scope="col">
-            EMAIL
+            メール
           </th>
           <th scope="col">
-            BROWSER
+            ブラウザ
           </th>
           <th scope="col">
-            App
+            アプリ
           </th>
         </tr>
       </thead>
@@ -78,7 +78,7 @@ const selectedNotification = ref('Only when I\'m online')
     <VCardText>
       <VForm @submit.prevent="() => {}">
         <p class="text-base font-weight-medium">
-          When should we send you notifications?
+          いつ通知を受け取りますか？
         </p>
 
         <VRow>
@@ -89,21 +89,21 @@ const selectedNotification = ref('Only when I\'m online')
             <VSelect
               v-model="selectedNotification"
               mandatory
-              :items="['Only when I\'m online', 'Anytime']"
+              :items="['オンライン時のみ', 'いつでも']"
             />
           </VCol>
         </VRow>
 
         <div class="d-flex flex-wrap gap-4 mt-4">
           <VBtn type="submit">
-            Save Changes
+            変更を保存
           </VBtn>
           <VBtn
             color="secondary"
             variant="outlined"
             type="reset"
           >
-            Reset
+            リセット
           </VBtn>
         </div>
       </VForm>

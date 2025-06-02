@@ -9,12 +9,12 @@ const accountData = {
   org: 'ThemeSelection',
   phone: '+1 (917) 543-9876',
   address: '123 Main St, New York, NY 10001',
-  state: 'New York',
+  state: 'ニューヨーク',
   zip: '10001',
-  country: 'USA',
-  language: 'English',
-  timezone: '(GMT-11:00) International Date Line West',
-  currency: 'USD',
+  country: 'アメリカ',
+  language: '日本語',
+  timezone: '(GMT+09:00) 東京',
+  currency: 'JPY',
 }
 
 const refInputEl = ref()
@@ -103,7 +103,7 @@ const currencies = [
 <template>
   <VRow>
     <VCol cols="12">
-      <VCard title="Account Details">
+      <VCard title="アカウント詳細">
         <VCardText class="d-flex">
           <!-- 👉 Avatar -->
           <VAvatar
@@ -124,7 +124,7 @@ const currencies = [
                   icon="ri-upload-cloud-line"
                   class="d-sm-none"
                 />
-                <span class="d-none d-sm-block">Upload new photo</span>
+                <span class="d-none d-sm-block">新しい写真をアップロード</span>
               </VBtn>
 
               <input
@@ -142,7 +142,7 @@ const currencies = [
                 variant="outlined"
                 @click="resetAvatar"
               >
-                <span class="d-none d-sm-block">Reset</span>
+                <span class="d-none d-sm-block">リセット</span>
                 <VIcon
                   icon="ri-refresh-line"
                   class="d-sm-none"
@@ -151,7 +151,7 @@ const currencies = [
             </div>
 
             <p class="text-body-1 mb-0">
-              Allowed JPG, GIF or PNG. Max size of 800K
+              JPG、GIF、PNG形式が使用可能です。最大サイズは800KBです
             </p>
           </form>
         </VCardText>
@@ -170,7 +170,7 @@ const currencies = [
                 <VTextField
                   v-model="accountDataLocal.firstName"
                   placeholder="John"
-                  label="First Name"
+                  label="名"
                 />
               </VCol>
 
@@ -182,7 +182,7 @@ const currencies = [
                 <VTextField
                   v-model="accountDataLocal.lastName"
                   placeholder="Doe"
-                  label="Last Name"
+                  label="姓"
                 />
               </VCol>
 
@@ -193,7 +193,7 @@ const currencies = [
               >
                 <VTextField
                   v-model="accountDataLocal.email"
-                  label="E-mail"
+                  label="メールアドレス"
                   placeholder="johndoe@gmail.com"
                   type="email"
                 />
@@ -206,7 +206,7 @@ const currencies = [
               >
                 <VTextField
                   v-model="accountDataLocal.org"
-                  label="Organization"
+                  label="組織"
                   placeholder="ThemeSelection"
                 />
               </VCol>
@@ -218,7 +218,7 @@ const currencies = [
               >
                 <VTextField
                   v-model="accountDataLocal.phone"
-                  label="Phone Number"
+                  label="電話番号"
                   placeholder="+1 (917) 543-9876"
                 />
               </VCol>
@@ -230,7 +230,7 @@ const currencies = [
               >
                 <VTextField
                   v-model="accountDataLocal.address"
-                  label="Address"
+                  label="住所"
                   placeholder="123 Main St, New York, NY 10001"
                 />
               </VCol>
@@ -242,8 +242,8 @@ const currencies = [
               >
                 <VTextField
                   v-model="accountDataLocal.state"
-                  label="State"
-                  placeholder="New York"
+                  label="都道府県"
+                  placeholder="東京都"
                 />
               </VCol>
 
@@ -254,8 +254,8 @@ const currencies = [
               >
                 <VTextField
                   v-model="accountDataLocal.zip"
-                  label="Zip Code"
-                  placeholder="10001"
+                  label="郵便番号"
+                  placeholder="100-0001"
                 />
               </VCol>
 
@@ -264,11 +264,10 @@ const currencies = [
                 cols="12"
                 md="6"
               >
-                <VSelect
+                <VTextField
                   v-model="accountDataLocal.country"
-                  label="Country"
-                  :items="['USA', 'Canada', 'UK', 'India', 'Australia']"
-                  placeholder="Select Country"
+                  label="国"
+                  placeholder="日本"
                 />
               </VCol>
 
@@ -279,9 +278,8 @@ const currencies = [
               >
                 <VSelect
                   v-model="accountDataLocal.language"
-                  label="Language"
-                  placeholder="Select Language"
-                  :items="['English', 'Spanish', 'Arabic', 'Hindi', 'Urdu']"
+                  label="言語"
+                  :items="['日本語', '英語', '中国語', '韓国語']"
                 />
               </VCol>
 
@@ -292,10 +290,8 @@ const currencies = [
               >
                 <VSelect
                   v-model="accountDataLocal.timezone"
-                  label="Timezone"
-                  placeholder="Select Timezone"
-                  :items="timezones"
-                  :menu-props="{ maxHeight: 200 }"
+                  label="タイムゾーン"
+                  :items="['(GMT+09:00) 東京', '(GMT+09:00) ソウル', '(GMT+08:00) 北京', '(GMT+00:00) ロンドン']"
                 />
               </VCol>
 
@@ -306,28 +302,9 @@ const currencies = [
               >
                 <VSelect
                   v-model="accountDataLocal.currency"
-                  label="Currency"
-                  placeholder="Select Currency"
-                  :items="currencies"
-                  :menu-props="{ maxHeight: 200 }"
+                  label="通貨"
+                  :items="['JPY', 'USD', 'EUR', 'GBP', 'CNY', 'KRW']"
                 />
-              </VCol>
-
-              <!-- 👉 Form Actions -->
-              <VCol
-                cols="12"
-                class="d-flex flex-wrap gap-4"
-              >
-                <VBtn>Save changes</VBtn>
-
-                <VBtn
-                  color="secondary"
-                  variant="outlined"
-                  type="reset"
-                  @click.prevent="resetForm"
-                >
-                  Reset
-                </VBtn>
               </VCol>
             </VRow>
           </VForm>
