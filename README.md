@@ -1,193 +1,183 @@
-<p align="center"></p>
+# Materio – Vuetify Vuejs 管理画面テンプレート（無料版）
 
-<p align="center">
-   <a href="https://themeselection.com/item/materio-free-vuetify-vuejs-admin-template/" target="_blank">
-      <img src="https://cdn.themeselection.com/ts-assets/materio/logo/logo.png" alt="materio-logo" width="60px" height="auto">
-   </a>
-</p>
+<p align="center">本番環境対応、丁寧に作られた、機能豊富なVuetify管理画面テンプレート</p>
 
-<h1 align="center">
-   <a href="https://themeselection.com/item/materio-free-vuetify-vuejs-admin-template/" target="_blank" align="center">
- Materio – Vuetify Vuejs Admin Template Free
-   </a>
-</h1>
+## クイックスタート 🚀
 
-<p align="center">Production Ready, Carefully Crafted, Extensive Vuetifty Admin Template</p>
+### 開発環境のセットアップ
 
-<p align="center">
-   <a href="https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/themeselection/materio-vuetify-vuejs-admin-template-free" alt="license">
-   </a>
-   <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/themeselection/materio-vuetify-vuejs-admin-template-free/deploy-demos.yml">
-   <a href="https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free/releases">
-    <img src="https://img.shields.io/github/release/themeselection/materio-vuetify-vuejs-admin-template-free.svg" alt="GitHub release">
-  </a>
-   <a href="https://twitter.com/Theme_Selection" target="_blank">
-      <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/Theme_Selection">
-   </a>
-</p>
+1. リポジトリをクローン
+```bash
+git clone https://github.com/sabiaka/2025_G3_Webapp.git
+cd 2025_G3_Webapp
+```
 
-<kbd>[![Materio – Vuetify Vuejs Admin Template Demo Screenshot](https://cdn.themeselection.com/ts-assets/materio/materio-vuetify-vuejs-admin-template-free/banner/banner.png)](https://themeselection.com/item/materio-free-vuetify-vuejs-admin-template/)</kbd>
+2. 依存関係のインストール
+```bash
+cd frontend
+npm install
+```
 
-## Introduction 🚀
+3. 開発サーバーの起動
+```bash
+npm run dev -- --host
+```
+開発サーバーは http://localhost:5173 で起動します。
 
-If you're a developer looking for an admin dashboard that is developer-friendly, rich with features, and highly customizable look no further than Materio. We've followed the highest industry standards to bring you the very best [Vue Admin Template](https://themeselection.com/item/category/vuejs-admin-templates/) that is not only fast and easy to use but highly scalable. Offering ultimate convenience and flexibility, you'll be able to build whatever application you want with very little hassle.
+### 本番環境へのデプロイ
 
-- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite) & [Vuetify 3](https://next.vuetifyjs.com/en/) - Uses the latest Vuetify 3
-- 🗂 [File based routing](https://github.com/hannoeru/vite-plugin-pages)
-- 📦 [Components auto importing](https://github.com/antfu/unplugin-vue-components)
-- 📑 [Layout system](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
-- 😃 Use icons from any icon sets with classes by [Iconify](https://iconify.design/)
-- 🌍 I18n ready
-- 🔥 Use the [`<script setup>`](https://vuejs.org/api/sfc-script-setup.html) syntax
-- 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
-- 🦾 TypeScript & JavaScript versions
+1. 本番用ビルドの作成
+```bash
+npm run build
+```
 
-[View Demo](https://demos.themeselection.com/materio-vuetify-vuejs-admin-template-free/demo/dashboard)
+2. ビルドされたファイルの配信
+```bash
+# serve パッケージのインストール（初回のみ）
+npm install -g serve
 
-## Installation ⚒️
+# ビルドされたファイルの配信
+serve -s dist
+```
+本番サーバーは http://localhost:3000 で起動します。
 
-Please [visit](https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/documentation/guide/installation.html) our docs for the installation guide.
+## はじめに 🚀
 
-## What's Included 📦
+開発者フレンドリーで、機能が充実し、高度にカスタマイズ可能な管理画面ダッシュボードをお探しの開発者の方々へ。Materioは最高の業界標準に従って作られた、高速で使いやすく、スケーラブルな[Vue管理画面テンプレート](https://themeselection.com/item/category/vuejs-admin-templates/)です。究極の利便性と柔軟性を提供し、最小限の手間で望むアプリケーションを構築できます。
 
-- Dashboard
-- Account Settings
-- Pages
-  - Login
-  - Register
-  - Error
-- Typography
-- Material Design Icons
-- Cards
-- Form layouts
-  - Horizontal Form
-  - Horizontal Form with Icons
-  - Vertical Form
-  - Vertical Form with Icons
-  - Multiple Column
-- Tables
+主な特徴：
+- ⚡️ [Vue 3](https://github.com/vuejs/core)、[Vite 3](https://github.com/vitejs/vite)、[Vuetify 3](https://next.vuetifyjs.com/en/) - 最新のVuetify 3を使用
+- 🗂 [ファイルベースのルーティング](https://github.com/hannoeru/vite-plugin-pages)
+- 📦 [コンポーネントの自動インポート](https://github.com/antfu/unplugin-vue-components)
+- 📑 [レイアウトシステム](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
+- 😃 [Iconify](https://iconify.design/)による任意のアイコンセットの使用
+- 🌍 多言語対応
+- 🔥 [`<script setup>`](https://vuejs.org/api/sfc-script-setup.html)構文の使用
+- 📥 [APIの自動インポート](https://github.com/antfu/unplugin-auto-import) - Composition APIなどを直接使用
+- 🦾 TypeScript & JavaScriptバージョン
 
-## What's in Premium Version 💎
+[デモを見る](https://demos.themeselection.com/materio-vuetify-vuejs-admin-template-free/demo/dashboard)
 
-| Materio Free Version                                                                             | Materio Premium Version                                                                        |
+## インストール ⚒️
+
+インストールガイドについては[ドキュメント](https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/documentation/guide/installation.html)をご覧ください。
+
+## 含まれる機能 📦
+
+- ダッシュボード
+- アカウント設定
+- ページ
+  - ログイン
+  - 登録
+  - エラー
+- タイポグラフィ
+- Material Designアイコン
+- カード
+- フォームレイアウト
+  - 水平フォーム
+  - アイコン付き水平フォーム
+  - 垂直フォーム
+  - アイコン付き垂直フォーム
+  - 複数列フォーム
+- テーブル
+
+## プレミアム版の機能 💎
+
+| 無料版                                                                             | プレミアム版                                                                        |
 | ------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------- |
-| [Demo](https://demos.themeselection.com/materio-vuetify-vuejs-admin-template-free/demo/dashboard)          | [Demo](https://themeselection.com/item/materio-free-vuetify-vuejs-admin-template/?tab=details#details)           |
-| [Download](https://themeselection.com/item/materio-free-vuetify-vuejs-admin-template/)        | [Purchase](https://themeselection.com/item/materio-vuetify-vuejs-admin-template/)           |
-| Single vertical menu                                                                             | Vertical (+ vertical collapsed) & Horizontal menu                                              |
-| Simple Light/Dark theme                                                                          | 3 Skin variants w/ light/dark theme support: Default, Bordered & Semi-dark                     |
-| 1 Simple Dashboard                                                                               | 3 Niche Dashboards                                                                             |
-| -                                                                                                | 5 API ready applications                                                                       |
-| Simple From Elements                                                                             | Advance form elements, validation & form wizard                                                 |
-| Basic Cards                                                                                      | Basic Cards + Advanced Cards + Statistics Cards                                                |
-| -                                                                                                | API ready JWT Authentication flow                                                              |
-| -                                                                                                | Access Control (even on CRUD operations)                                                       |
-| -                                                                                                | Quick Search - Quickly navigate between pages (w/ hotkey support)                              |
-| Basic Pages                                                                                      | Authentication Pages in 2 variants + Ready-to-use pages like Pricing, FAQ, Knowledge base, etc |
-| -                                                                                                | 3D Characters + Illustrations                                                                  |
-| Basic tables                                                                                     | Advanced tables                                                                                |
-| Manual customization                                                                             | Quick customization using theme config file                                                    |
-| -                                                                                                | Advanced Charts                                                                                |
-| 1 Chart Library                                                                                  | 2 Chart Libraries                                                                              |
-| -                                                                                                | Multiple Navbar & Menu Options                                                                 |
-| -                                                                                                | Starter-kit                                                                                    |
-| -                                                                                                | Internationalization support in components                                                     |
-| Regular Support                                                                                  | Priority Support                                                                               |
-| Basic Documentation
+| [デモ](https://demos.themeselection.com/materio-vuetify-vuejs-admin-template-free/demo/dashboard)          | [デモ](https://themeselection.com/item/materio-free-vuetify-vuejs-admin-template/?tab=details#details)           |
+| [ダウンロード](https://themeselection.com/item/materio-free-vuetify-vuejs-admin-template/)        | [購入](https://themeselection.com/item/materio-vuetify-vuejs-admin-template/)           |
+| 単一の垂直メニュー                                                                             | 垂直（折りたたみ可能）＆水平メニュー                                              |
+| シンプルなライト/ダークテーマ                                                                          | 3つのスキン変種（ライト/ダークテーマ対応）：デフォルト、ボーダー、セミダーク                     |
+| 1つのシンプルなダッシュボード                                                                               | 3つのニッチダッシュボード                                                                             |
+| -                                                                                                | 5つのAPI対応アプリケーション                                                                       |
+| シンプルなフォーム要素                                                                             | 高度なフォーム要素、バリデーション、フォームウィザード                                                 |
+| 基本カード                                                                                      | 基本カード + 高度なカード + 統計カード                                                |
+| -                                                                                                | API対応JWT認証フロー                                                              |
+| -                                                                                                | アクセス制御（CRUD操作にも対応）                                                       |
+| -                                                                                                | クイック検索 - ホットキー対応のページ間ナビゲーション                              |
+| 基本ページ                                                                                      | 2種類の認証ページ + 料金表、FAQ、ナレッジベースなどの即時使用可能なページ |
+| -                                                                                                | 3Dキャラクター + イラスト                                                                  |
+| 基本テーブル                                                                                     | 高度なテーブル                                                                                |
+| 手動カスタマイズ                                                                             | テーマ設定ファイルによるクイックカスタマイズ                                                    |
+| -                                                                                                | 高度なチャート                                                                                |
+| 1つのチャートライブラリ                                                                                  | 2つのチャートライブラリ                                                                              |
+| -                                                                                                | 複数のナビバー＆メニューオプション                                                                 |
+| -                                                                                                | スターターキット                                                                                    |
+| -                                                                                                | コンポーネントの国際化対応                                                     |
+| 通常サポート                                                                                  | 優先サポート                                                                               |
+| 基本ドキュメント
 
-## Documentation 📜
+## ドキュメント 📜
 
-Check out our live [Documentation](https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/documentation/)
+[ドキュメント](https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/documentation/)をご覧ください。
 
-## Browser Support 🖥️
+## ブラウザ対応 🖥️
 
-![chrome](https://github.com/nuxt/nuxt/assets/47495003/bbb6d7b0-2db6-4af4-abdc-a73de71dd287)
-&nbsp;&nbsp;![firefox](https://github.com/nuxt/nuxt/assets/47495003/bca1f2d0-d597-453b-8525-5c94e36bfc33)
-&nbsp;&nbsp;![safari](https://github.com/nuxt/nuxt/assets/47495003/8ecbb395-78fb-40fb-bb59-7301bf8a7e5d)
-&nbsp;&nbsp;![Microsoft Edge](https://github.com/nuxt/nuxt/assets/47495003/f945821b-0cbd-464d-8103-824d4d5c4e9a)
+Chrome、Firefox、Safari、Microsoft Edgeをサポート
 
-*_It also supports other browser which implemented latest CSS standards_
+*_最新のCSS標準を実装した他のブラウザもサポート_
 
-## Contributing 🦸
+## 貢献 🦸
 
-Contributions are always welcome and recommended! Here is how:
+貢献は常に歓迎します！以下の手順で貢献できます：
 
-- Fork the repository ([here is the guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo)).
-- Clone to your machine `git clone https://github.com/YOUR_USERNAME/REPO_NAME` Make your changes
-- Create a pull request
+1. リポジトリをフォーク（[ガイド](https://docs.github.com/en/get-started/quickstart/fork-a-repo)）
+2. ローカルにクローン `git clone https://github.com/YOUR_USERNAME/REPO_NAME`
+3. 変更を加える
+4. プルリクエストを作成
 
-### Contribution Requirements 🧰
+### 貢献の要件 🧰
 
-- When you contribute, you agree to give a non-exclusive license to ThemeSelection to use that contribution in any context as we (ThemeSelection) see appropriate.
-- If you use content provided by another party, it must be appropriately licensed using an open-source license.
-- Contributions are only accepted through Github pull requests.
-- Finally, the contributed code must work in all supported browsers (see above for browser support).
+- 貢献する際は、ThemeSelectionがその貢献を適切と判断する文脈で使用する非独占的ライセンスを付与することに同意します。
+- 他者のコンテンツを使用する場合は、適切なオープンソースライセンスを使用する必要があります。
+- 貢献はGitHubのプルリクエストを通じてのみ受け付けます。
+- 貢献されたコードは、サポートされているすべてのブラウザで動作する必要があります。
 
-## Changelog 📆
+## 変更履歴 📆
 
-Please refer to the [CHANGELOG](CHANGELOG.md) file. We will add detailed release notes to each new release.
+[CHANGELOG](CHANGELOG.md)ファイルをご参照ください。各リリースの詳細なリリースノートを追加します。
 
-## Support 🧑🏻‍💻
+## サポート 🧑🏻‍💻
 
-For free products, enjoy community support via GitHub issues. Upgrade to Premium for dedicated support from our expert team.
+無料製品については、GitHubのissuesを通じてコミュニティサポートをご利用いただけます。プレミアム版では、専門チームによる専用サポートをご利用いただけます。
 
-## License &copy;
+## ライセンス ©
 
 - Copyright © [ThemeSelection](https://themeselection.com/)
-- Licensed under [MIT](LICENSE)
-- All our free items are Open Source and licensed under MIT. You can use our free items for personal as well as commercial purposes. We just need an attribution from your end. Copy the below link and paste it at the footer of your web application or project.
+- [MIT](LICENSE)ライセンスの下で提供
+- すべての無料アイテムはオープンソースで、MITライセンスの下で提供されています。個人用途および商用用途に使用できます。フッターに以下のリンクを追加してください：
 
    ```html
   <a href="https://themeselection.com/">ThemeSelection</a>
    ```
 
-## Also Available In
+## その他のバージョン
 
-<p>
-   <!-- Figma -->
-   <a href="https://themeselection.com/item/materio-figma-admin-dashboard-ui-kit/" target="_blank"><picture><source width="auto" height="74px" media="(prefers-color-scheme: dark)" srcset="https://github.com/microsoft/vscode/assets/47495003/0318a6c8-4f9b-4cf6-af5e-d357f909ea2b"><source width="auto" height="74px" media="(prefers-color-scheme: light)" srcset="https://github.com/microsoft/vscode/assets/47495003/47f21dfe-c1fc-4a7d-859e-4d98f8cdded1"><img width="auto" height="74px" alt="html" src="https://github.com/microsoft/vscode/assets/47495003/47f21dfe-c1fc-4a7d-859e-4d98f8cdded1"></picture></img></a>&nbsp;&nbsp;
-   <!-- HTML -->
-   <a href="https://themeselection.com/item/materio-bootstrap-html-admin-template/" target="_blank"><picture><source width="auto" height="74px" media="(prefers-color-scheme: dark)" srcset="https://github.com/microsoft/vscode/assets/47495003/5fe77c46-2e4c-475a-8dec-e30e2badddee"><source width="auto" height="74px" media="(prefers-color-scheme: light)" srcset="https://github.com/microsoft/vscode/assets/47495003/3f5decd8-cd99-4ed3-aa76-528ca061385b"><img width="auto" height="74px" alt="html" src="https://github.com/microsoft/vscode/assets/47495003/3f5decd8-cd99-4ed3-aa76-528ca061385b"></picture></img></a>&nbsp;&nbsp;
-   <!-- HTML + Laravel -->
-   <a href="https://themeselection.com/item/materio-bootstrap-laravel-admin-template/" target="_blank"><picture><source width="auto" height="74px" media="(prefers-color-scheme: dark)" srcset="https://github.com/microsoft/vscode/assets/47495003/efe420e4-9863-41b7-9eda-47ea94f21a62"><source width="auto" height="74px" media="(prefers-color-scheme: light)" srcset="https://github.com/microsoft/vscode/assets/47495003/be3b86e0-4d5e-4736-bf89-4267fb4d6710"><img width="auto" height="74px" alt="html_laravel" src="https://github.com/microsoft/vscode/assets/47495003/be3b86e0-4d5e-4736-bf89-4267fb4d6710"></picture></img></a>&nbsp;&nbsp;
-   <!-- HTML + Django -->
-   <a href="https://themeselection.com/item/materio-bootstrap-django-admin-template/" target="_blank"><picture><source width="auto" height="74px" media="(prefers-color-scheme: dark)" srcset="https://github.com/microsoft/vscode/assets/47495003/3c87d33b-1223-4aaa-a652-388dcb714c98"><source width="auto" height="74px" media="(prefers-color-scheme: light)" srcset="https://github.com/microsoft/vscode/assets/47495003/51db1947-eac1-466f-87fd-5a209010fe9c"><img width="auto" height="74px" alt="html_django" src="https://github.com/microsoft/vscode/assets/47495003/51db1947-eac1-466f-87fd-5a209010fe9c"></picture></img></a>&nbsp;&nbsp;
-   <!-- .Net Core -->
-   <a href="https://themeselection.com/item/materio-aspnet-core-mvc-admin-template/" target="_blank"><picture><source width="auto" height="74px" media="(prefers-color-scheme: dark)" srcset="https://github.com/microsoft/vscode/assets/47495003/6327fd7b-9c54-4189-a852-28551ad0e002"><source width="auto" height="74px" media="(prefers-color-scheme: light)" srcset="https://github.com/microsoft/vscode/assets/47495003/9856e9d5-021f-4573-902a-702e80dd0102"><img width="auto" height="74px" alt="net_core" src="https://github.com/microsoft/vscode/assets/47495003/9856e9d5-021f-4573-902a-702e80dd0102"></picture></img></a>&nbsp;&nbsp;
-   <!-- NextJS -->
-   <a href="https://themeselection.com/item/materio-mui-react-nextjs-admin-template/" target="_blank"><picture><source width="auto" height="74px" media="(prefers-color-scheme: dark)" srcset="https://github.com/microsoft/vscode/assets/47495003/66344629-6d21-4f92-9078-f479b39cb34e"><source width="auto" height="74px" media="(prefers-color-scheme: light)" srcset="https://github.com/microsoft/vscode/assets/47495003/e1daf4e1-3fa5-4a44-969a-6143ddd67310"><img width="auto" height="74px" alt="next.js" src="https://github.com/microsoft/vscode/assets/47495003/e1daf4e1-3fa5-4a44-969a-6143ddd67310"></picture></img></a>&nbsp;&nbsp;
-   <!-- React -->
-   <a href="{pro_react_version_item_page_link_on_themeselection}" target="_blank"><picture><source width="auto" height="74px" media="(prefers-color-scheme: dark)" srcset="https://github.com/microsoft/vscode/assets/47495003/3877046e-c652-4b3d-99e9-2e134da1d6cf"><source width="auto" height="74px" media="(prefers-color-scheme: light)" srcset="https://github.com/microsoft/vscode/assets/47495003/8c8c940e-d8f9-4213-a7f7-f8bc4968f169"><img width="auto" height="74px" alt="react" src="https://github.com/microsoft/vscode/assets/47495003/8c8c940e-d8f9-4213-a7f7-f8bc4968f169"></picture></img></a>&nbsp;&nbsp;
-   <!-- Vue -->
-   <a href="https://themeselection.com/item/materio-vuetify-vuejs-admin-template/" target="_blank"><picture><source width="auto" height="74px" media="(prefers-color-scheme: dark)" srcset="https://github.com/microsoft/vscode/assets/47495003/881bbbb8-d1c9-421c-9bce-4ea43dfa9e6e"><source width="auto" height="74px" media="(prefers-color-scheme: light)" srcset="https://github.com/microsoft/vscode/assets/47495003/b02d6473-0345-42c2-be58-e648806104fa"><img width="auto" height="74px" alt="vue" src="https://github.com/microsoft/vscode/assets/47495003/b02d6473-0345-42c2-be58-e648806104fa"></picture></img></a>&nbsp;&nbsp;
-   <!-- Vue + Laravel -->
-   <a href="https://themeselection.com/item/materio-vuetify-vuejs-laravel-admin-template/" target="_blank"><picture><source width="auto" height="74px" media="(prefers-color-scheme: dark)" srcset="https://github.com/microsoft/vscode/assets/47495003/20b6428e-3fa5-4f80-a389-9e4cd732c2de"><source width="auto" height="74px" media="(prefers-color-scheme: light)" srcset="https://github.com/microsoft/vscode/assets/47495003/3008d3eb-7b5b-4d9c-8563-837744a901da"><img width="auto" height="74px" alt="vue_laravel" src="https://github.com/microsoft/vscode/assets/47495003/3008d3eb-7b5b-4d9c-8563-837744a901da"></picture></img></a>&nbsp;&nbsp;
-</p>
+Figma、HTML、HTML + Laravel、HTML + Django、.Net Core、NextJS、React、Vue、Vue + Laravelバージョンも利用可能です。
 
-<!-- Add other pro variants here. You can get the logo URL from here: https://icones.js.org/collection/logos -->
+## プレミアム管理画面テンプレートをお探しですか？ 👀
 
-## Looking For Premium Admin Templates ?? 👀
+**[ThemeSelection](https://themeselection.com/)** は、高品質で現代的、プロフェッショナルで使いやすい**完全にコード化されたダッシュボードテンプレートとUIキット**を提供し、アプリケーション開発を加速します！
 
-**[ThemeSelection](https://themeselection.com/)** provides Selected high quality, modern design, professional and easy-to-use **Fully Coded Dashboard Templates & UI Kits** to create your applications faster!
+- [Bootstrap管理画面テンプレート](https://themeselection.com/item/category/bootstrap-admin-template/)
+- [VueJS管理画面テンプレート](https://themeselection.com/item/category/vuejs-admin-templates/)
+- [Laravel管理画面テンプレート](https://themeselection.com/item/category/laravel-admin-templates/)
+- [Django管理画面テンプレート](https://themeselection.com/item/category/django-admin-template/)
+- [React (NextJS)管理画面テンプレート](https://themeselection.com/item/category/next-js-admin-template/)
+- [ASP.Net Core管理画面テンプレート](https://themeselection.com/item/category/asp-net-dashboard/)
+- [無料UIキット](https://themeselection.com/item/category/free-ui-kits/)
 
-- [Bootstrap Admin Templates](https://themeselection.com/item/category/bootstrap-admin-template/)
-- [VueJS Admin Templates](https://themeselection.com/item/category/vuejs-admin-templates/)
-- [Laravel Admin Templates](https://themeselection.com/item/category/laravel-admin-templates/)
-- [Django Admin Templates](https://themeselection.com/item/category/django-admin-template/)
-- [React (NextJS) Admin Templates](https://themeselection.com/item/category/next-js-admin-template/)
-- [ASP.Net Core Admin Templates](https://themeselection.com/item/category/asp-net-dashboard/)
-- [Free UI Kits](https://themeselection.com/item/category/free-ui-kits/)
+Materioのような[無料管理画面テンプレート](https://themeselection.com/item/category/free-admin-templates/)をダウンロードするには、[ThemeSelection](https://themeselection.com/)をご覧ください。
 
-If you want to [Download Free Admin Templates](https://themeselection.com/item/category/free-admin-templates/) like Materio then do visit [ThemeSelection](https://themeselection.com/).
+## 便利なリンク 🎁
 
-## Useful Links 🎁
+- [Vueチートシート](https://vue-cheatsheet.themeselection.com/)
+- [無料アイテム](https://themeselection.com/item/category/free-admin-templates/)
+- [無料管理画面テンプレートのダウンロード](https://themeselection.com/item/category/free-admin-templates/)
+- [Bootstrap 5チートシート](https://bootstrap-cheatsheet.themeselection.com/)
 
-- [Vue CheatSheet](https://vue-cheatsheet.themeselection.com/)
-- [Freebies](https://themeselection.com/item/category/free-admin-templates/)
-- [Download Free Admin Templates](https://themeselection.com/item/category/free-admin-templates/)
-- [Bootstrap 5 CheatSheet](https://bootstrap-cheatsheet.themeselection.com/)
-
-## Social Media :earth_africa:
+## ソーシャルメディア :earth_africa:
 
 - [Twitter](https://twitter.com/Theme_Selection)
 - [Facebook](https://www.facebook.com/ThemeSelections/)
