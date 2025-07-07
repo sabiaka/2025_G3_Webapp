@@ -85,7 +85,7 @@ serve -s dist
 
 | 無料版                                                                             | プレミアム版                                                                        |
 | ------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------- |
-| [デモ](https://demos.themeselection.com/materio-vuetify-vuejs-admin-template-free/demo/dashboard)          | [デモ]([https://themeselection.com/item/materio-free-vuetify-vuejs-admin-template/?tab=details#details](https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/dashboards/crm))           |
+| [デモ](https://demos.themeselection.com/materio-vuetify-vuejs-admin-template-free/demo/dashboard)          | [デモ](https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/dashboards/crm)           |
 | [ダウンロード](https://themeselection.com/item/materio-free-vuetify-vuejs-admin-template/)        | [購入](https://themeselection.com/item/materio-vuetify-vuejs-admin-template/)           |
 | 単一の垂直メニュー                                                                             | 垂直（折りたたみ可能）＆水平メニュー                                              |
 | シンプルなライト/ダークテーマ                                                                          | 3つのスキン変種（ライト/ダークテーマ対応）：デフォルト、ボーダー、セミダーク                     |
